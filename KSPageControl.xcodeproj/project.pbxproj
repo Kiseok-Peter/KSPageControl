@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		497B100223DFF73A00E51AB5 /* KSPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 497B100023DFF73A00E51AB5 /* KSPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		497B100923DFF95500E51AB5 /* KSPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497B100823DFF95500E51AB5 /* KSPageControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		497B0FFD23DFF73A00E51AB5 /* KSPageControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KSPageControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		497B100023DFF73A00E51AB5 /* KSPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSPageControl.h; sourceTree = "<group>"; };
 		497B100123DFF73A00E51AB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		497B100823DFF95500E51AB5 /* KSPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSPageControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				497B100023DFF73A00E51AB5 /* KSPageControl.h */,
 				497B100123DFF73A00E51AB5 /* Info.plist */,
+				497B100823DFF95500E51AB5 /* KSPageControl.swift */,
 			);
 			path = KSPageControl;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					497B0FFC23DFF73A00E51AB5 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497B100923DFF95500E51AB5 /* KSPageControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		497B100623DFF73A00E51AB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ks.KSPageControl;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +290,7 @@
 		497B100723DFF73A00E51AB5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
